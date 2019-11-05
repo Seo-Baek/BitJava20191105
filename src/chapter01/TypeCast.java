@@ -13,7 +13,7 @@ public class TypeCast {
 		
 		// explicity (명시적) Type Cast
 		long l2 = 123456789L;
-		int i2 = (int)l2;
+		int i2 = (int)l2;		//명시적으로 캐스팅을 해도 경고표시가 생성된다
 
 	}
 
