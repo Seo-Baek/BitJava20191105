@@ -11,7 +11,7 @@ public class VarTest {
 				//정수
 				byte b = 1;
 				short s = 10;
-				int i = 2000;      //값  리터런이라고도한다
+				int i = 2000;      //값  literal이라고도한다
 				long l = 1234567890L;
 				
 				//실수
