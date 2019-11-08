@@ -22,28 +22,33 @@ public class Swap {
 		int a1 = 20;
 		int a2 = 10;
 		int a3 = 50;
-		
-		if (a1 >= a2) {
-			if(a1 > a3) {   // a1 > a3 anc a1 >= a2 
-				System.out.println("최대값은" + a1 + "입니다.");
-			}
-			 else {  // a3 >= a1 and a1>= a2
-				System.out.println("최대값은" + a3 + "입니다.");
-			}
-			} else { 
-				if(a3 >= a2) {  // a3 >= a2 and a2 > a1
-					
-					System.out.println("최대값은" + a3 + "입니다.");
-					}else {  // a3 < a2 and a2 >a1
-						System.out.println("최대값은" + a2 + "입니다.");
-					}
-				 
-			}		
-			
 
-			} 		
+		if (a1 >= a2) {
+
+			if (a1 > a3) {   // a1 > a3 anc a1 >= a2 
+				System.out.println("최대값은" + a1 + "입니다.");
+				
+			} else {  // a3 >= a1 and a1>= a2
+				System.out.println("최대값은" + a3 + "입니다.");	
+			}
+		} else { 
+			if (a3 >= a2) {  // a3 >= a2 and a2 > a1
+				System.out.println("최대값은" + a3 + "입니다.");
+				
+			} else {  // a3 < a2 and a2 >a1
+				System.out.println("최대값은" + a2 + "입니다.");
+				
+			}
+				 
+		}		
+			
 		
-	}
+		 
+		
+	} //main	
+		
+
+}//class
 
 	
 	
