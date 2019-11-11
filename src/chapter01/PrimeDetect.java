@@ -26,6 +26,8 @@ public class PrimeDetect {
 		
 		while (i < num) {
 			System.out.println("i= " + i + " 진입하였다!!");
+			//int result = num % i;
+			//if ( result == 0) { }   ↓↓↓
 			
 			if (num % i == 0) {		//소수가 아님
 				isPrime = false;
