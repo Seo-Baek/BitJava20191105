@@ -13,64 +13,53 @@ public class PrimeDetect04 {
 		// 2부터  (자기자신 -1)  15에 나누어본다. 나머지가 0인게 존재하면 소수가 아님! 
 		
 		//for 문으로 돌게끔!
+//		int j = 1;
+//		while( j <= 500000 ) {
+//			int num = j;
+//
+//  	        int i = 2;
+//  	        boolean isPrime = true;
+//			while(i < num) {
+//				int result = num % i;
+//				if( result == 0) {
+//					isPrime = false;
+//					break;
+//				}
+//				i++;
+//			}
+//			
+//			if(isPrime) {
+//				System.out.println(num);
+//			} 
+//			
+//			j++;
+//		}		
 		
-		
-		
-		int j	= 1;
-		
-		while(j <= 1000) {
-			int num = j;
-			boolean result = isPrime(num);
-			if (result == true) {
-				System.out.println(num);
-			}
-			j++;	
-		}	
-		
-		// 판별
-	
 
-		//{(x-1)!^2}/x
+		for (int j = 1; j <= 500000; j++) {
 		
-		
-		
-		
-		/**
-		 * while (i < num) { if (num % i == 0) { //소수아니면 System.out.println(num +
-		 * "은 소수가 아닙니다."); return;
-		 * 
-		 * }
-		 * 
-		 * i++; }
-		 * 
-		 * System.out.println(num + "은 소수입니다.");
-		 */		
-		//{(x-1)!^2}/x
-				
-				
-	}//main
-	
-	
-	
-	public static boolean isPrime(int x) {
-			
-			int i			= 2;
+			int num = j;
 			boolean isPrime = true;
-				
-			while(i < x) {
-				int result 	= x % i;
-						
+			
+			for (int i = 2; i < num; i++) {
+				int result = num % i;
 				if(result == 0) {
 					isPrime = false;
 					break;
-			}
-			i++;
-	
-		}
-			return isPrime;
-	}//main
-}//class
-
+					
+				}
 			
+			}
+			if(isPrime) {
+				System.out.println(num);
+				
+			}
+			
+		}	
+		
+	}//main
+	
+}//class	
 
+		
 
