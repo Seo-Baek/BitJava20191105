@@ -2,7 +2,7 @@ package chapter01;
 
 import java.util.Scanner;
 
-public class PrimeDetect2 {
+public class PrimeDetect02 {
 	
 	
 
@@ -52,11 +52,11 @@ public class PrimeDetect2 {
 	
 	public static boolean isPrime(int x) {
 			
-			int i	= 2;
+			int i			= 2;
 			boolean isPrime = true;
 				
 			while(i < x) {
-				int result = x % i;
+				int result 	= x % i;
 						
 				if(result == 0) {
 					isPrime = false;
